@@ -1,0 +1,18 @@
+attached_manuscript_item,module,outputs,status
+Table1,29,Table1_AS04.csv; Table1_numeric.csv,calculated
+Table2A,29,Table2A_Incidence.csv,calculated
+Table2B,11,Main_Models1to4.csv,calculated
+S1A,10,S1A_Denominators.csv,calculated
+S1B,13,Selection_two_stages.csv,calculated
+S2A,15/18,Confirmation_HR.csv; First_positive_confirmation_opportunity.csv,calculated
+S2B,26,S2B_Pooled_sensitivity.csv,existing post hoc three-group
+S3A,21–25,FEF_HR_comparison.csv; Spline_settings.csv,calculated
+S3B,11,Main_PH.csv,calculated
+S3C,21–24,PH_tests.csv; Time_effect_LRT.csv,calculated
+S4,27–28,S4_Original_contrasts.csv; S4_BMI_TV_contrasts.csv; S4_PH_tests.csv; S4_VIF.csv; S4_Original_B_vs_C.csv; S4_BMI_TV_B_vs_C.csv; S4_BMI_time_tests.csv; S4_Reproduction_checks.csv,calculated; local numerical reproduction required
+S5,14,AFT_distribution_TR.csv; AFT_distribution_fit.csv,calculated
+S6A/B,01/03/19,FEF_identity_variable_map.csv; FEF_identity_summary.csv; Final_cohort_FEF_arithmetic.csv,calculated
+S6C,12,Covariate_distribution.csv; Pairwise_covariate_support.csv; Design_column_VIF.csv,calculated
+S7,16,KM_2_4_6_years_CI.csv,calculated
+Figure1,31,Figure1.png/tiff/pdf,preserved approved artwork; source flow counts recalculated
+Figure2,16/31,Figure2.png/tiff/pdf; Figure2_Recomputed_QC.*,approved original preserved; fresh QC rendering

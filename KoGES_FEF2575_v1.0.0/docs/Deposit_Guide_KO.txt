@@ -1,0 +1,16 @@
+GitHub 및 Zenodo 기탁 절차
+
+이번 ZIP은 기탁 준비본이며 아직 업로드하거나 DOI를 발급하지 않았습니다.
+1. 로컬에서 00_Final_Analysis.R을 실행하고 기존 집계 결과와 재현 검증을 완료합니다. 현재 원고의 S4도 포함하여 기존 집계값과 일치하는지 확인합니다.
+2. 새 sessionInfo, package_versions, dependency_versions 및 사용 코드 체크섬을 보관합니다. 01_Capture_Environment.R은 실제 설치 패키지로만 환경을 기록합니다. 기존 sessionInfo는 원래 실행의 기록이지 새 실행 증거가 아닙니다.
+3. 정식 코드 버전과 저자/라이선스를 확정합니다. 준비본은 1.0.0-rc2.2입니다. 검증 후 정식 1.0.0으로 바꾸면 README, CITATION.cff, metadata의 버전을 모두 함께 바꾸고 다시 체크섬을 만듭니다. CITATION.cff의 저자 목록은 첨부 원고를 따랐습니다.
+4. GitHub에는 승인된 code/docs/aggregate assets만 올립니다. data_private, Output_*, 원자료, ID, model RDS, 로컬 세션의 .RData/.Rhistory는 공개하지 않습니다. .gitignore가 들어 있지만 공개 파일 목록을 직접 확인합니다. 로컬 산출물 ZIP을 그대로 public release asset으로 올리는 대신 필요한 검증 집계·환경 기록을 검토하여 포함합니다.
+5. Zenodo에서 GitHub 연동을 설정하고 해당 저장소의 보관을 활성화합니다. 이후 GitHub release를 생성하면 Zenodo에서 처리되고 record DOI가 제공됩니다. 수동 software 업로드도 가능합니다.
+6. 이 저장소는 CITATION.cff를 실제 메타데이터로 사용합니다. metadata/zenodo.json.example은 참고용이며 .zenodo.json으로 자동 활성화하지 않습니다. 둘이 함께 있으면 Zenodo는 .zenodo.json을 우선 사용하므로 서로 다른 메타데이터를 두지 않습니다.
+7. 논문에는 실제 사용한 release의 version-specific DOI를 넣습니다. 전체 버전을 가리키는 concept DOI와 구분합니다. DOI 문자열을 예상하여 만들거나 GitHub URL을 DOI라고 쓰지 않습니다.
+8. 실제 GitHub URL/DOI를 Availability of data and materials와 참고문헌, CITATION.cff에 반영하고 저장된 release와 논문 코드 버전을 대조합니다. 이미 보존된 release의 수정은 새 버전으로 관리합니다.
+
+공식 안내 (접속 2026-10-15)
+https://help.zenodo.org/docs/github/archive-software/github-upload/
+https://help.zenodo.org/docs/github/describe-software/
+https://zenodo.org/help/versioning

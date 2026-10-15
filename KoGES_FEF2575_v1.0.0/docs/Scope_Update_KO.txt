@@ -1,0 +1,11 @@
+현재 manuscript 기준 변경 (2026-10-15)
+
+사용자의 최신 지시에 따라 첨부 RR_Manuscript_Refined.docx와 RR_Additional_File_1_Refined.docx를 분석 범위의 기준으로 삼았습니다. 이전 Model 5 제외 지시 대신 현재 원고 S4를 재현합니다.
+
+주분석 네 그룹은 그대로 유지합니다. S4는 동일한 완전사례 3035명/219건에서 Recurrent와 Frequent만 합친 별도 탐색적 세 그룹입니다(Never 2808, Single 127, Repeated 100). 과거 평균은 AS01–03 세 값이 모두 있어야 계산하며 추가 결측이 있으면 대상자를 임의 제외하지 않고 중단합니다.
+
+Module 27: Model 4/5/A/B/C, 세 HR 대비, B 대 C 우도비 검정, PH 진단 및 공변량 BH, VIF.
+Module 28: baseline BMI × [log(1+t)−log(2)], 기존/시간가변 HR 및 B 대 C 비교, 기존 수치 대조. 시간가변 모델에는 cox.zph를 적용하지 않습니다.
+Module 29–32: 기술표, 재현 검증, 그림, 하나의 다중 시트 Excel 및 결과 ZIP 저장.
+
+원고 자체는 수정하지 않았습니다. 코드/설명/대응표를 원고에 맞췄습니다. FEF 예측식은 미확정이며 DOI도 실제 기탁 후 추가해야 합니다. 원자료 R 실행은 수행하지 않았습니다.

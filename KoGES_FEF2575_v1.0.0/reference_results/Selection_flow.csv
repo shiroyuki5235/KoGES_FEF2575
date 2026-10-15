@@ -1,0 +1,13 @@
+"step","before_n","excluded_n","remaining_n"
+"All_unique_IDs",10030,0,10030
+"FEF_AS01_AS04_complete",10030,6016,4014
+"No_obstruction_AS01_AS04",4014,456,3558
+"No_low_FEV1_AS01_AS04",3558,64,3494
+"No_low_FVC_AS01_AS04",3494,124,3370
+"Normal_status_fully_observed",3370,1,3369
+"No_physician_diagnosed_asthma",3369,65,3304
+"Asthma_screens_observed",3304,6,3298
+"No_documented_asthma_medication",3298,60,3238
+"AS04_time_zero_observed",3238,0,3238
+"Exposure_date_order_valid",3238,0,3238
+"Usable_followup_AS05_AS07",3238,178,3060

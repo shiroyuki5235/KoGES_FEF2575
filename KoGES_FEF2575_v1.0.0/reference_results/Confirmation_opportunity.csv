@@ -1,0 +1,11 @@
+"definition","group","n","events","first_positive_events","unconfirmed_last_positive","positive_then_normal","one_observed_test","two_observed_tests","three_observed_tests","person_years"
+"Consecutive_observed","Overall",3035,93,219,89,37,243,578,2214,16595.3333333333
+"Consecutive_observed","Never",2808,53,132,58,21,225,515,2068,15398.25
+"Consecutive_observed","Single",127,21,45,16,8,7,33,87,680.833333333333
+"Consecutive_observed","Recurrent",54,9,22,9,4,6,11,37,278.333333333333
+"Consecutive_observed","Frequent",46,10,20,6,4,5,19,22,237.916666666667
+"Consecutive_scheduled","Overall",3035,92,219,90,37,243,578,2214,16595.3333333333
+"Consecutive_scheduled","Never",2808,52,132,59,21,225,515,2068,15398.25
+"Consecutive_scheduled","Single",127,21,45,16,8,7,33,87,680.833333333333
+"Consecutive_scheduled","Recurrent",54,9,22,9,4,6,11,37,278.333333333333
+"Consecutive_scheduled","Frequent",46,10,20,6,4,5,19,22,237.916666666667

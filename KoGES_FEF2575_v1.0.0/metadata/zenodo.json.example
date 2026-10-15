@@ -1,0 +1,23 @@
+{
+  "title": "KoGES repeated low FEF landmark analysis",
+  "upload_type": "software",
+  "version": "1.0.0-rc2.2",
+  "description": "Release candidate for the fixed four-group KoGES FEF analysis. Local investigator validation remains required. Restricted participant-level data are not included.",
+  "creators": [
+    {
+      "name": "Kang, Sun Young"
+    },
+    {
+      "name": "Roh, Sanghyun"
+    },
+    {
+      "name": "Gim, Jeong-An"
+    }
+  ],
+  "license": "MIT",
+  "keywords": [
+    "KoGES",
+    "spirometry",
+    "FEF25-75"
+  ]
+}

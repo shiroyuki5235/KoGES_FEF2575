@@ -1,0 +1,29 @@
+Suggested manuscript edits — not yet applied to the attached DOCX files
+
+FEF provenance while the source equation remains unconfirmed
+The supplied FEF25–75 percent-predicted fields were retained for exposure classification. Although published descriptions identify the VMAX2130 spirometer, the available documentation did not establish the FEF-specific reference equation, software configuration, or consistency of prediction settings across AS01–AS04. Arithmetic comparisons with 100 × BEST/PRED were used to check field consistency and did not determine the reference equation.
+
+After documentary confirmation ONLY
+Replace the unresolved placeholder with the verified equation author/year, software/reference setting, relevant centres and visits, including any changes across visits. Cite the actual source document. Do not fill these fields from device brand alone.
+
+S3 basis wording after local confirmation
+Natural cubic spline bases were generated with splines::ns using 3 degrees of freedom and no intercept. Internal knots were placed at the one-third and two-thirds sample quantiles, with boundary knots at the observed minimum and maximum in the 3035 complete cases. The same fixed AS04 ratio basis was used in its interactions with log(1+t)−log(2), where t was follow-up time in years. The archived Spline_settings.csv records the numerical settings.
+
+Code availability AFTER the verified release is deposited
+The analysis code for [PROJECT TITLE], version [VERIFIED RELEASE], is available at [GITHUB REPOSITORY URL] and archived in Zenodo at [VERSION-SPECIFIC DOI URL]. The repository includes execution instructions, variable mappings, aggregate reproduction targets, and the recorded software environment. Participant-level KoGES data are not included and remain subject to the KDCA/National Biobank of Korea approval and data-use conditions.
+
+Software details to complete with the verified release
+Project name: KoGES repeated low FEF analysis
+Project home page: [ACTUAL GITHUB URL]
+Archived version: [ACTUAL VERSION-SPECIFIC ZENODO DOI]
+Programming language: R
+Original investigator environment: Windows 11; R 4.6.1; survival 3.8-12
+Dependencies: survival, splines, openxlsx, zip; exact versions in the archived execution record
+Licence: MIT for the code, subject to author approval; KoGES data restrictions are separate
+
+AI disclosure reflecting THIS work; adapt to the full actual workflow
+OpenAI ChatGPT assisted with analysis-request documents, R code drafting and revision, code consolidation and static review, manuscript organisation, and language editing. Reported statistical estimates were obtained from investigator-run analyses. The authors remain responsible for executing and validating the deposited code, checking its correspondence with the reported results, and approving the interpretation, references and final manuscript.
+Do not change the last sentence to a completed validation claim until the consolidated code has been run and reviewed.
+
+Scope conflict
+Table S4 is included in this release candidate. Historical Models 5/A/B/C and the specified baseline BMI time-effect extension are exploratory; they do not alter the primary four-group classification.

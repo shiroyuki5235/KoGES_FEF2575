@@ -1,0 +1,798 @@
+{
+  "packaging_date": "2026-10-15",
+  "status": "STATIC_CHECKS_PASSED_LOCAL_RERUN_REQUIRED",
+  "r_executed": false,
+  "participant_data_available": false,
+  "checks": [
+    {
+      "check": "R grammar: 00_Final_Analysis.R",
+      "pass_status": true,
+      "detail": "tree-sitter R grammar; not R execution"
+    },
+    {
+      "check": "R grammar: 01_Capture_Environment.R",
+      "pass_status": true,
+      "detail": "tree-sitter R grammar; not R execution"
+    },
+    {
+      "check": "R grammar: 99_Validate_Syntax.R",
+      "pass_status": true,
+      "detail": "tree-sitter R grammar; not R execution"
+    },
+    {
+      "check": "Sequential modules",
+      "pass_status": true,
+      "detail": "[0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32]"
+    },
+    {
+      "check": "No source driver",
+      "pass_status": true,
+      "detail": ""
+    },
+    {
+      "check": "Current S4 included",
+      "pass_status": true,
+      "detail": ""
+    },
+    {
+      "check": "No participant/model saves",
+      "pass_status": true,
+      "detail": ""
+    },
+    {
+      "check": "Original group guards",
+      "pass_status": true,
+      "detail": ""
+    },
+    {
+      "check": "Original dataframe never replaced by reconstructed exposure",
+      "pass_status": true,
+      "detail": ""
+    },
+    {
+      "check": "Endpoint second positive preserved",
+      "pass_status": true,
+      "detail": ""
+    },
+    {
+      "check": "AFT zero bound preserved",
+      "pass_status": true,
+      "detail": ""
+    },
+    {
+      "check": "Nine-test pooled family",
+      "pass_status": true,
+      "detail": ""
+    },
+    {
+      "check": "Strict verification before original assets",
+      "pass_status": true,
+      "detail": ""
+    },
+    {
+      "check": "Main reference keys",
+      "pass_status": true,
+      "detail": ""
+    },
+    {
+      "check": "Pooled reference coverage",
+      "pass_status": true,
+      "detail": ""
+    },
+    {
+      "check": "Metadata consistent",
+      "pass_status": true,
+      "detail": ""
+    },
+    {
+      "check": "No active competing Zenodo JSON",
+      "pass_status": true,
+      "detail": ""
+    },
+    {
+      "check": "Byte-preserved Figure1.pdf",
+      "pass_status": true,
+      "detail": ""
+    },
+    {
+      "check": "Byte-preserved Figure1.png",
+      "pass_status": true,
+      "detail": ""
+    },
+    {
+      "check": "1200 dpi Figure1.png",
+      "pass_status": true,
+      "detail": "(1199.9976, 1199.9976)"
+    },
+    {
+      "check": "Byte-preserved Figure1.tiff",
+      "pass_status": true,
+      "detail": ""
+    },
+    {
+      "check": "1200 dpi Figure1.tiff",
+      "pass_status": true,
+      "detail": "(1200.0, 1200.0)"
+    },
+    {
+      "check": "Byte-preserved Figure2.pdf",
+      "pass_status": true,
+      "detail": ""
+    },
+    {
+      "check": "Byte-preserved Figure2.png",
+      "pass_status": true,
+      "detail": ""
+    },
+    {
+      "check": "1200 dpi Figure2.png",
+      "pass_status": true,
+      "detail": "(1199.9976, 1199.9976)"
+    },
+    {
+      "check": "Byte-preserved Figure2.tiff",
+      "pass_status": true,
+      "detail": ""
+    },
+    {
+      "check": "1200 dpi Figure2.tiff",
+      "pass_status": true,
+      "detail": "(1200.0, 1200.0)"
+    },
+    {
+      "check": "No private extension .gitignore",
+      "pass_status": true,
+      "detail": ""
+    },
+    {
+      "check": "No private extension LICENSE",
+      "pass_status": true,
+      "detail": ""
+    },
+    {
+      "check": "No private extension SHA256SUMS.txt",
+      "pass_status": true,
+      "detail": ""
+    },
+    {
+      "check": "No private extension README.md",
+      "pass_status": true,
+      "detail": ""
+    },
+    {
+      "check": "No private extension CITATION.cff",
+      "pass_status": true,
+      "detail": ""
+    },
+    {
+      "check": "No private extension CHANGELOG.md",
+      "pass_status": true,
+      "detail": ""
+    },
+    {
+      "check": "No private extension README_KO.txt",
+      "pass_status": true,
+      "detail": ""
+    },
+    {
+      "check": "No private extension Manuscript_Insertions_EN.txt",
+      "pass_status": true,
+      "detail": ""
+    },
+    {
+      "check": "No private extension Manuscript_code_map.csv",
+      "pass_status": true,
+      "detail": ""
+    },
+    {
+      "check": "No private extension Source_provenance.csv",
+      "pass_status": true,
+      "detail": ""
+    },
+    {
+      "check": "No private extension Scope_Update_KO.txt",
+      "pass_status": true,
+      "detail": ""
+    },
+    {
+      "check": "No private extension Deposit_Guide_KO.txt",
+      "pass_status": true,
+      "detail": ""
+    },
+    {
+      "check": "No private extension FEF_Reference_Evidence_KO.txt",
+      "pass_status": true,
+      "detail": ""
+    },
+    {
+      "check": "No private extension Review_KO.txt",
+      "pass_status": true,
+      "detail": ""
+    },
+    {
+      "check": "No private extension DATA_DICTIONARY.txt",
+      "pass_status": true,
+      "detail": ""
+    },
+    {
+      "check": "No private extension FEF_Provider_Query_KO.txt",
+      "pass_status": true,
+      "detail": ""
+    },
+    {
+      "check": "No private extension 01_Capture_Environment.R",
+      "pass_status": true,
+      "detail": ""
+    },
+    {
+      "check": "No private extension 99_Validate_Syntax.R",
+      "pass_status": true,
+      "detail": ""
+    },
+    {
+      "check": "No private extension 00_Final_Analysis.R",
+      "pass_status": true,
+      "detail": ""
+    },
+    {
+      "check": "No private extension Static_validation.json",
+      "pass_status": true,
+      "detail": ""
+    },
+    {
+      "check": "No private extension Validation_KO.txt",
+      "pass_status": true,
+      "detail": ""
+    },
+    {
+      "check": "No private extension zenodo.json.example",
+      "pass_status": true,
+      "detail": ""
+    },
+    {
+      "check": "No private extension History_B_vs_C_LRT.csv",
+      "pass_status": true,
+      "detail": ""
+    },
+    {
+      "check": "No private extension Source_variable_mapping.csv",
+      "pass_status": true,
+      "detail": ""
+    },
+    {
+      "check": "No private extension History_ABC_fit.csv",
+      "pass_status": true,
+      "detail": ""
+    },
+    {
+      "check": "No private extension History_All_contrasts.csv",
+      "pass_status": true,
+      "detail": ""
+    },
+    {
+      "check": "No private extension Model_fit.csv",
+      "pass_status": true,
+      "detail": ""
+    },
+    {
+      "check": "No private extension Confirmation_pair_gap.csv",
+      "pass_status": true,
+      "detail": ""
+    },
+    {
+      "check": "No private extension AFT_distribution_fit.csv",
+      "pass_status": true,
+      "detail": ""
+    },
+    {
+      "check": "No private extension Model4_PH.csv",
+      "pass_status": true,
+      "detail": ""
+    },
+    {
+      "check": "No private extension Model4_HR.csv",
+      "pass_status": true,
+      "detail": ""
+    },
+    {
+      "check": "No private extension AFT_previous_fit_comparison.csv",
+      "pass_status": true,
+      "detail": ""
+    },
+    {
+      "check": "No private extension BMI_TV_FEF_comparison.csv",
+      "pass_status": true,
+      "detail": ""
+    },
+    {
+      "check": "No private extension AFT_censoring_encoding.csv",
+      "pass_status": true,
+      "detail": ""
+    },
+    {
+      "check": "No private extension AFT_distribution_TR.csv",
+      "pass_status": true,
+      "detail": ""
+    },
+    {
+      "check": "No private extension FEF_identity_missing_columns.csv",
+      "pass_status": true,
+      "detail": ""
+    },
+    {
+      "check": "No private extension History_Model_status.csv",
+      "pass_status": true,
+      "detail": ""
+    },
+    {
+      "check": "No private extension Table2A_Incidence.csv",
+      "pass_status": true,
+      "detail": ""
+    },
+    {
+      "check": "No private extension KM_aggregate_steps.csv",
+      "pass_status": true,
+      "detail": ""
+    },
+    {
+      "check": "No private extension Table1_AS04_4Groups.csv",
+      "pass_status": true,
+      "detail": ""
+    },
+    {
+      "check": "No private extension Selection_two_stages.csv",
+      "pass_status": true,
+      "detail": ""
+    },
+    {
+      "check": "No private extension Covariate_Spearman.csv",
+      "pass_status": true,
+      "detail": ""
+    },
+    {
+      "check": "No private extension Four_group_PH.csv",
+      "pass_status": true,
+      "detail": ""
+    },
+    {
+      "check": "No private extension Pooled_sensitivity_all_contrasts.csv",
+      "pass_status": true,
+      "detail": ""
+    },
+    {
+      "check": "No private extension AFT_previous_TR_comparison.csv",
+      "pass_status": true,
+      "detail": ""
+    },
+    {
+      "check": "No private extension History_Model4_vs_Model5.csv",
+      "pass_status": true,
+      "detail": ""
+    },
+    {
+      "check": "No private extension Confirmation_HR.csv",
+      "pass_status": true,
+      "detail": ""
+    },
+    {
+      "check": "No private extension FEF_HR_comparison.csv",
+      "pass_status": true,
+      "detail": ""
+    },
+    {
+      "check": "No private extension Selection_flow.csv",
+      "pass_status": true,
+      "detail": ""
+    },
+    {
+      "check": "No private extension KM_2_4_6_years_CI.csv",
+      "pass_status": true,
+      "detail": ""
+    },
+    {
+      "check": "No private extension History_PH_tests.csv",
+      "pass_status": true,
+      "detail": ""
+    },
+    {
+      "check": "No private extension Four_group_exposure_estimates.csv",
+      "pass_status": true,
+      "detail": ""
+    },
+    {
+      "check": "No private extension BMI_TV_B_vs_C.csv",
+      "pass_status": true,
+      "detail": ""
+    },
+    {
+      "check": "No private extension Followup_patterns_counts.csv",
+      "pass_status": true,
+      "detail": ""
+    },
+    {
+      "check": "No private extension PH_tests.csv",
+      "pass_status": true,
+      "detail": ""
+    },
+    {
+      "check": "No private extension FEF_identity_variable_map.csv",
+      "pass_status": true,
+      "detail": ""
+    },
+    {
+      "check": "No private extension Model4_fit.csv",
+      "pass_status": true,
+      "detail": ""
+    },
+    {
+      "check": "No private extension Confirmation_opportunity.csv",
+      "pass_status": true,
+      "detail": ""
+    },
+    {
+      "check": "No private extension Design_column_VIF.csv",
+      "pass_status": true,
+      "detail": ""
+    },
+    {
+      "check": "No private extension sessionInfo_original.txt",
+      "pass_status": true,
+      "detail": ""
+    },
+    {
+      "check": "No private extension Covariate_distribution.csv",
+      "pass_status": true,
+      "detail": ""
+    },
+    {
+      "check": "No private extension First_positive_confirmation_opportunity.csv",
+      "pass_status": true,
+      "detail": ""
+    },
+    {
+      "check": "No private extension Confirmation_PH.csv",
+      "pass_status": true,
+      "detail": ""
+    },
+    {
+      "check": "No private extension Event_interval_summary.csv",
+      "pass_status": true,
+      "detail": ""
+    },
+    {
+      "check": "No private extension Time_effect_LRT.csv",
+      "pass_status": true,
+      "detail": ""
+    },
+    {
+      "check": "No private extension FEF_identity_summary.csv",
+      "pass_status": true,
+      "detail": ""
+    },
+    {
+      "check": "No private extension BMI_TV_BMI_time_tests.csv",
+      "pass_status": true,
+      "detail": ""
+    },
+    {
+      "check": "No private extension FEF_visit_distribution.csv",
+      "pass_status": true,
+      "detail": ""
+    },
+    {
+      "check": "No private extension Cohort_counts.csv",
+      "pass_status": true,
+      "detail": ""
+    },
+    {
+      "check": "No private extension Pairwise_covariate_support.csv",
+      "pass_status": true,
+      "detail": ""
+    },
+    {
+      "check": "No private extension Analysis_status.csv",
+      "pass_status": true,
+      "detail": ""
+    },
+    {
+      "check": "No private extension Confirmation_legacy_comparison.csv",
+      "pass_status": true,
+      "detail": ""
+    },
+    {
+      "check": "No private extension FEF_identity_difference_bins.csv",
+      "pass_status": true,
+      "detail": ""
+    },
+    {
+      "check": "No private extension Figure2.tiff",
+      "pass_status": true,
+      "detail": ""
+    },
+    {
+      "check": "No private extension Figure2.png",
+      "pass_status": true,
+      "detail": ""
+    },
+    {
+      "check": "No private extension Figure2.pdf",
+      "pass_status": true,
+      "detail": ""
+    },
+    {
+      "check": "No private extension Figure1.tiff",
+      "pass_status": true,
+      "detail": ""
+    },
+    {
+      "check": "No private extension Figure1.png",
+      "pass_status": true,
+      "detail": ""
+    },
+    {
+      "check": "No private extension Figure1.pdf",
+      "pass_status": true,
+      "detail": ""
+    },
+    {
+      "check": "Aggregate header History_B_vs_C_LRT.csv",
+      "pass_status": true,
+      "detail": ""
+    },
+    {
+      "check": "Aggregate header Source_variable_mapping.csv",
+      "pass_status": true,
+      "detail": ""
+    },
+    {
+      "check": "Aggregate header History_ABC_fit.csv",
+      "pass_status": true,
+      "detail": ""
+    },
+    {
+      "check": "Aggregate header History_All_contrasts.csv",
+      "pass_status": true,
+      "detail": ""
+    },
+    {
+      "check": "Aggregate header Model_fit.csv",
+      "pass_status": true,
+      "detail": ""
+    },
+    {
+      "check": "Aggregate header Confirmation_pair_gap.csv",
+      "pass_status": true,
+      "detail": ""
+    },
+    {
+      "check": "Aggregate header AFT_distribution_fit.csv",
+      "pass_status": true,
+      "detail": ""
+    },
+    {
+      "check": "Aggregate header Model4_PH.csv",
+      "pass_status": true,
+      "detail": ""
+    },
+    {
+      "check": "Aggregate header Model4_HR.csv",
+      "pass_status": true,
+      "detail": ""
+    },
+    {
+      "check": "Aggregate header AFT_previous_fit_comparison.csv",
+      "pass_status": true,
+      "detail": ""
+    },
+    {
+      "check": "Aggregate header BMI_TV_FEF_comparison.csv",
+      "pass_status": true,
+      "detail": ""
+    },
+    {
+      "check": "Aggregate header AFT_censoring_encoding.csv",
+      "pass_status": true,
+      "detail": ""
+    },
+    {
+      "check": "Aggregate header AFT_distribution_TR.csv",
+      "pass_status": true,
+      "detail": ""
+    },
+    {
+      "check": "Aggregate header FEF_identity_missing_columns.csv",
+      "pass_status": true,
+      "detail": ""
+    },
+    {
+      "check": "Aggregate header History_Model_status.csv",
+      "pass_status": true,
+      "detail": ""
+    },
+    {
+      "check": "Aggregate header Table2A_Incidence.csv",
+      "pass_status": true,
+      "detail": ""
+    },
+    {
+      "check": "Aggregate header KM_aggregate_steps.csv",
+      "pass_status": true,
+      "detail": ""
+    },
+    {
+      "check": "Aggregate header Table1_AS04_4Groups.csv",
+      "pass_status": true,
+      "detail": ""
+    },
+    {
+      "check": "Aggregate header Selection_two_stages.csv",
+      "pass_status": true,
+      "detail": ""
+    },
+    {
+      "check": "Aggregate header Covariate_Spearman.csv",
+      "pass_status": true,
+      "detail": ""
+    },
+    {
+      "check": "Aggregate header Four_group_PH.csv",
+      "pass_status": true,
+      "detail": ""
+    },
+    {
+      "check": "Aggregate header Pooled_sensitivity_all_contrasts.csv",
+      "pass_status": true,
+      "detail": ""
+    },
+    {
+      "check": "Aggregate header AFT_previous_TR_comparison.csv",
+      "pass_status": true,
+      "detail": ""
+    },
+    {
+      "check": "Aggregate header History_Model4_vs_Model5.csv",
+      "pass_status": true,
+      "detail": ""
+    },
+    {
+      "check": "Aggregate header Confirmation_HR.csv",
+      "pass_status": true,
+      "detail": ""
+    },
+    {
+      "check": "Aggregate header FEF_HR_comparison.csv",
+      "pass_status": true,
+      "detail": ""
+    },
+    {
+      "check": "Aggregate header Selection_flow.csv",
+      "pass_status": true,
+      "detail": ""
+    },
+    {
+      "check": "Aggregate header KM_2_4_6_years_CI.csv",
+      "pass_status": true,
+      "detail": ""
+    },
+    {
+      "check": "Aggregate header History_PH_tests.csv",
+      "pass_status": true,
+      "detail": ""
+    },
+    {
+      "check": "Aggregate header Four_group_exposure_estimates.csv",
+      "pass_status": true,
+      "detail": ""
+    },
+    {
+      "check": "Aggregate header BMI_TV_B_vs_C.csv",
+      "pass_status": true,
+      "detail": ""
+    },
+    {
+      "check": "Aggregate header Followup_patterns_counts.csv",
+      "pass_status": true,
+      "detail": ""
+    },
+    {
+      "check": "Aggregate header PH_tests.csv",
+      "pass_status": true,
+      "detail": ""
+    },
+    {
+      "check": "Aggregate header FEF_identity_variable_map.csv",
+      "pass_status": true,
+      "detail": ""
+    },
+    {
+      "check": "Aggregate header Model4_fit.csv",
+      "pass_status": true,
+      "detail": ""
+    },
+    {
+      "check": "Aggregate header Confirmation_opportunity.csv",
+      "pass_status": true,
+      "detail": ""
+    },
+    {
+      "check": "Aggregate header Design_column_VIF.csv",
+      "pass_status": true,
+      "detail": ""
+    },
+    {
+      "check": "Aggregate header Covariate_distribution.csv",
+      "pass_status": true,
+      "detail": ""
+    },
+    {
+      "check": "Aggregate header First_positive_confirmation_opportunity.csv",
+      "pass_status": true,
+      "detail": ""
+    },
+    {
+      "check": "Aggregate header Confirmation_PH.csv",
+      "pass_status": true,
+      "detail": ""
+    },
+    {
+      "check": "Aggregate header Event_interval_summary.csv",
+      "pass_status": true,
+      "detail": ""
+    },
+    {
+      "check": "Aggregate header Time_effect_LRT.csv",
+      "pass_status": true,
+      "detail": ""
+    },
+    {
+      "check": "Aggregate header FEF_identity_summary.csv",
+      "pass_status": true,
+      "detail": ""
+    },
+    {
+      "check": "Aggregate header BMI_TV_BMI_time_tests.csv",
+      "pass_status": true,
+      "detail": ""
+    },
+    {
+      "check": "Aggregate header FEF_visit_distribution.csv",
+      "pass_status": true,
+      "detail": ""
+    },
+    {
+      "check": "Aggregate header Cohort_counts.csv",
+      "pass_status": true,
+      "detail": ""
+    },
+    {
+      "check": "Aggregate header Pairwise_covariate_support.csv",
+      "pass_status": true,
+      "detail": ""
+    },
+    {
+      "check": "Aggregate header Analysis_status.csv",
+      "pass_status": true,
+      "detail": ""
+    },
+    {
+      "check": "Aggregate header Confirmation_legacy_comparison.csv",
+      "pass_status": true,
+      "detail": ""
+    },
+    {
+      "check": "Aggregate header FEF_identity_difference_bins.csv",
+      "pass_status": true,
+      "detail": ""
+    },
+    {
+      "check": "Path patch: R grammar and unchanged Modules 01–32",
+      "pass_status": true,
+      "detail": "Interactive Windows dialogs not executed here."
+    },
+    {
+      "check": "S4 CI convention correction",
+      "pass_status": true,
+      "detail": "Archived original beta/SE reproduce comparison CI with z=1.96; implied TV CI difference agrees with user failure. Full R rerun required."
+    }
+  ]
+}

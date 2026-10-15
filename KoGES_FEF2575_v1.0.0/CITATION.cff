@@ -1,0 +1,19 @@
+cff-version: 1.2.0
+message: "If you use this code, cite the verified release. This is an unvalidated release candidate."
+type: software
+title: "KoGES repeated low FEF landmark analysis"
+version: 1.0.0-rc2.2
+authors:
+  - family-names: Kang
+    given-names: Sun Young
+  - family-names: Roh
+    given-names: Sanghyun
+  - family-names: Gim
+    given-names: Jeong-An
+license: MIT
+keywords:
+  - KoGES
+  - spirometry
+  - FEF25-75
+  - longitudinal cohort
+abstract: "R code for the fixed four-group KoGES FEF landmark analysis, with original aggregate reproduction targets. Restricted participant-level data are not included."

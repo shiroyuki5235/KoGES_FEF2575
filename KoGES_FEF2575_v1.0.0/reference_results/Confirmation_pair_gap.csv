@@ -1,0 +1,11 @@
+"definition","group","confirmed_n","gap_median","gap_min","gap_max","skipped_pairs"
+"Consecutive_observed","Overall",93,2,1.5,4,1
+"Consecutive_observed","Never",53,2,1.5,4,1
+"Consecutive_observed","Single",21,2,1.75,2.16666666666667,0
+"Consecutive_observed","Recurrent",9,2,1.75,2.16666666666667,0
+"Consecutive_observed","Frequent",10,2,1.83333333333333,2.25,0
+"Consecutive_scheduled","Overall",92,2,1.5,2.58333333333333,0
+"Consecutive_scheduled","Never",52,2,1.5,2.58333333333333,0
+"Consecutive_scheduled","Single",21,2,1.75,2.16666666666667,0
+"Consecutive_scheduled","Recurrent",9,2,1.75,2.16666666666667,0
+"Consecutive_scheduled","Frequent",10,2,1.83333333333333,2.25,0

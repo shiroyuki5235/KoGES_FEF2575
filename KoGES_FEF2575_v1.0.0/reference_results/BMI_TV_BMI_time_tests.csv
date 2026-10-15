@@ -1,0 +1,11 @@
+"model","test","df","chisq","p_value"
+"Model4","BMI log-time effect",1,3.57080291819284,0.05880387187248
+"Model4","Additional log-time curvature",1,0.382841744215966,0.536086293166131
+"Model5","BMI log-time effect",1,5.27180680725132,0.0216735056762538
+"Model5","Additional log-time curvature",1,0.244696104453851,0.620834725842702
+"A","BMI log-time effect",1,5.55793956884008,0.0183970542011395
+"A","Additional log-time curvature",1,0.235167258750153,0.627718574336273
+"B","BMI log-time effect",1,5.48357739745279,0.0191959347042336
+"B","Additional log-time curvature",1,0.283791246489272,0.594226998257535
+"C","BMI log-time effect",1,5.21361721848825,0.0224106622408556
+"C","Additional log-time curvature",1,0.289833490105138,0.590327253476475

@@ -1,0 +1,33 @@
+KoGES FEF 예측식과 장비 확인 기록
+검색 및 확인일: 2026-10-15
+결론: VMAX2130 사용에 대한 코호트 문헌 근거는 있으나, AS01–AS04 공급 FEF %PRED에 실제 적용된 식은 확정하지 못했습니다.
+
+확인된 것
+1. Kim SH et al. BMJ Open 2021;11:e043432, doi:10.1136/bmjopen-2020-043432.
+https://bmjopen.bmj.com/content/11/3/e043432
+Ansan–Ansung 연구의 pre-bronchodilator spirometry 장비를 VMAX2130(SensorMedics)으로 기술합니다. 이것은 장비의 문헌 근거이며 FEF 전용 reference 설정의 증명이 아닙니다.
+
+2. Choi JK, Paek D, Lee JO. Tuberc Respir Dis 2005;58:230–242, doi:10.4046/trd.2005.58.3.230.
+https://synapse.koreamed.org/upload/SynapseData/PDFData/0003trd/trd-58-230.pdf
+13쪽 원문을 확인했습니다. KNHANES 2001 기반이며 FVC, FEV1, FEV6, FEV1/FVC 예측식을 다룹니다. 이 연구도 2130 장비를 사용했으나 KoGES의 FEF 식으로 인용할 근거가 되지 않습니다. FEF 식의 저자·계수·적용 차수를 이 논문에서 확인할 수 없었습니다.
+
+3. 국립보건연구원 KoGES 공식 지침서 및 매뉴얼
+https://www.nih.go.kr/ko/main/contents.do?menuNo=300583
+공식 페이지에서 연결된 다음 PDF를 내려받아 확인했습니다.
+- KoGES 조사지침서 기반설문조사및검진: 172쪽
+- 신체계측 및 검진 조사방법 매뉴얼: 9쪽
+- 조사항목별 조사지침: 38쪽
+이 세 자료에서 해당 release의 FEF 전용 예측식·계수·방문별 장비 설정을 확인하지 못했습니다. 공개 지침 전체에 정보가 없다고 일반화하지 않습니다. 이 문서들의 구체적 범위가 AS01–AS04 FEF source configuration을 포괄하는지도 확정되지 않았습니다.
+다운로드 식별자: atchFileId=13288349307a4b4a9075d54bb739b267, fileSn=2/10/13, bbsId=B0000009.
+
+4. 공급 변수와 산술 검증
+AS01–AS03: SPFEFP=PRED, SPFEFB=BEST, SPFEFPP=%PRED.
+AS04–AS07: SP4_1=PRED, SP4_2=BEST, SP4_3=%PRED.
+100×BEST/PRED와 공급 %PRED의 일치는 같은 reference equation이나 방문 간 설정 동일성의 증거가 아닙니다. 측정기 설명서의 지원 예측식 목록도 현장에서 선택한 식을 증명하지 못합니다.
+
+검색했으나 근거로 채택하지 않은 자료
+Vmax/Encore 매뉴얼의 재게시본, 다른 코호트/병원의 Vmax 사용 논문, PONY/GLI/Knudson/Morris 후보. 장비 계열·소프트웨어·현장 설정·방문을 연결하는 자료가 없어 어떤 후보도 KoGES 식으로 단정하지 않았습니다. 건강검진센터의 Endocrinol Metab 2021;36:1254–1267 논문도 KoGES 자료가 아니므로 적용 근거로 쓰지 않았습니다.
+
+필요한 1차 확인
+AS01–AS04 각각 및 안산/안성 센터별 장비 모델과 소프트웨어 버전, FEF25–75 predicted equation 저자/연도/계수, 성별·연령 분기, 신장/나이 단위, 인종 보정계수, source setting의 변경 여부, 공급 %PRED 반올림 규칙, PRED/BEST/%PRED의 추출 관계.
+기관 확인이 끝나기 전에는 공급값과 그룹을 유지하고 현재 한계 기술을 유지합니다. 답변이 없어도 확인했다고 쓰거나 임의의 식을 대입하지 않습니다.

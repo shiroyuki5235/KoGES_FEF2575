@@ -1,0 +1,21 @@
+Input contract
+One row per DIST_ID; tab-delimited plain text or gzip; character ID; CP949 default.
+Raw data are not bundled. Never merge releases by approximate matching or remove duplicates automatically.
+
+Visit mapping: AS01–AS07 examination months: AS01_EDATE1 ... AS07_EDATE7, strict YYYYMM.
+AS01–03 FEF %pred: SPFEFPP; measured: SPFEFB; predicted: SPFEFP.
+AS04–07 FEF %pred: SP4_3; measured: SP4_2; predicted: SP4_1.
+AS01–03 FEV1 %pred: SPFEVPP; FVC %pred: SPFVCPP; observed ratio: SPFEV_FVCB.
+AS04–07 FEV1 %pred: SP2_3; FVC %pred: SP1_3; observed ratio: SP3_2.
+Prefix every suffix with its visit and underscore. Observed ratios are supplied as percentages and divided by 100. Predicted ratio is not the outcome.
+AS04 covariates: AGE, SEX, BMI, SMOKE, PACKYR; site: AS01_AREA (1 Ansung, 2 Ansan).
+SEX: 1 Male, 2 Female. SMOKE: 1 Never, 2 Former, 3 Current.
+Never-smoker missing pack-years become zero; positive pack-years conflicting with Never remain missing, consistent with the archived implementation.
+
+Asthma diagnosis: AS01_PDAS, AS02_PDAS or AS02_PDFAS, AS03_PDFAS, AS04_ASTH.
+Medication: exact AS01–AS04 fields listed in Module 01 of the code; observed positive records exclude participants. Missing medication subitems are not asserted to be confirmed non-use.
+Numeric missing sentinel codes and invalid/nonpositive spirometry handling are preserved in Module 02. Invalid dates/IDs/duplicate columns stop execution.
+Original group: number of supplied FEF %pred values <65 at AS01–04: 0/1/2/3–4.
+Original outcome: first dated observed FEV1/FVC <0.70 at AS05–07. Landmark AS04. Month differences /12; censor at last dated valid ratio.
+Confirmed outcome: second positive at adjacent scheduled visits; separate observed-pair version can bridge AS06 missingness.
+No FEF reference equation is computed or assumed by this code.

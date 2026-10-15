@@ -2,7 +2,8 @@ cff-version: 1.2.0
 message: "If you use this code, cite the verified release. This is an unvalidated release candidate."
 type: software
 title: "KoGES repeated low FEF landmark analysis"
-version: 1.0.0-rc2.2
+version: 1.0.0
+doi: "10.5281/zenodo.23383064"
 authors:
   - family-names: Kang
     given-names: Sun Young

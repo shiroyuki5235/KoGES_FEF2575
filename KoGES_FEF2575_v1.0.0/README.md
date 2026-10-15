@@ -1,38 +1,147 @@
 # KoGES repeated low FEF analysis
 
-Release candidate 1.0.0-rc2.2, prepared 15 October 2026.
+**Version 1.0.0 · 15 October 2026**
 
-This repository reconstructs the agreed four-group landmark analysis from an approved local KoGES Ansan–Ansung data release. It consolidates the investigator-run source scripts and adds explicit reproduction gates. It is not yet a statistically validated final release: the consolidated script has been checked with an R grammar parser, but has not been run on participant data in the packaging environment.
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.23383064.svg)](https://doi.org/10.5281/zenodo.23383064)
 
-Current manuscript scope governs this release: primary four-group Models 1–4 plus exploratory pooled three-group Model 4/5/A/B/C and BMI time effects in Table S4. Original groups, participants and endpoints are preserved. Modules 27–28 reproduce S4 and compare against archived results. Local execution remains required.
+R analysis code supporting the manuscript:
 
-## Run
+**“Frequency of low mid-expiratory flow measurements and subsequent airflow obstruction: a Korean longitudinal cohort study.”**
 
-1. Extract the whole repository. Set the RStudio working directory to its root.
-2. Use a fresh R session. Install `survival`, `openxlsx`, and `zip` if needed. `splines` ships with R. The archived investigator environment was Windows 11, R 4.6.1, survival 3.8-12; see `reference_results/sessionInfo_original.txt`.
-3. Open `R/00_Final_Analysis.R`. The default input is `ASAS01to10_Processed.txt.gz` in the working directory. If absent, select it in the file dialog. If reference/assets folders are absent, a second dialog asks for the extracted package’s `R/00_Final_Analysis.R`. Input encoding is CP949. Run Module 00 through Module 32 sequentially. No earlier scripts, saved R workspace, or `source()` driver are needed.
-4. Review the output `Tables/Reproduction_checks.csv`, `Tables/Analysis_status.csv`, figures, and actual `sessionInfo.txt`. Any mismatch must be investigated, never patched by editing expected counts or copying archived results into the generated output.
-5. Run `R/01_Capture_Environment.R` in the same session to record dependency versions and an optional actual renv lockfile. This step does not install or update analysis packages.
+This repository provides the analysis workflow for the KoGES Ansan–Ansung longitudinal cohort. The consolidated script was executed by the investigators using the approved study data, and the reported numerical reproduction checks passed.
 
-Outputs are written under ignored `Output_*/Output_<timestamp>_FEF_Final/`, with one XLSX containing separate worksheets for every calculated CSV table, PNG/TIFF at 1200 dpi, vector PDFs, and an aggregate results ZIP. The original Figure 1 and Figure 2 are preserved byte-for-byte. `Figure2_Recomputed_QC` is a fresh rendering for verification, not a replacement for the approved artwork. PDFs do not have a fixed raster dpi.
+## Analysis scope
 
-The calculations use cohort-supplied FEF percent predicted throughout. BEST/PRED reconstruction is an arithmetic audit only. The source equation remains unconfirmed and no new prediction equation is substituted.
+The analysis uses AS01–AS04 to classify the frequency of low FEF₂₅–₇₅ measurements, with AS04 as the landmark and AS05–AS07 as the outcome follow-up period.
 
-## Fixed reference cohorts
+Low FEF₂₅–₇₅ is defined as <65% predicted. The primary exposure groups are:
+
+- **Never:** no low measurements.
+- **Single:** one low measurement.
+- **Recurrent:** two low measurements.
+- **Frequent/Persistent:** three or four low measurements.
+
+Included analyses:
+
+- Participant selection and descriptive statistics.
+- Site-stratified Cox models 1–4.
+- Kaplan–Meier estimates and incidence summaries.
+- Confirmation-based outcomes and alternative exposure thresholds.
+- Natural-spline adjustment and specified time-varying effects.
+- Exploratory historical-spirometry adjustment, including Models 5/A/B/C and BMI time effects reported in Table S4.
+- Interval-censored accelerated failure-time models.
+
+Exploratory three-group analyses combine the Recurrent and Frequent/Persistent groups into a Repeated group. These analyses are performed separately from the primary four-group analyses.
+
+## Software requirements
+
+The analysis was run with:
+
+| Software | Version |
+|---|---|
+| R | 4.6.1 |
+| survival | 3.8.12 |
+| openxlsx | 4.2.9 |
+| zip | 3.0.2 |
+
+The `splines` package is included with R.
+
+Install the required additional packages if needed:
+
+```r
+install.packages(c("survival", "openxlsx", "zip"))
+```
+
+## Running the analysis
+
+1. Download and extract the complete repository.
+2. Start a fresh R session and set the working directory to the extracted repository folder.
+3. Open `R/00_Final_Analysis.R`.
+4. Run **Module 00 through Module 32** sequentially.
+
+The script initially looks for `ASAS01to10_Processed.txt.gz` in the working directory. If the file is absent, a dialog opens so that the input file can be selected without moving it.
+
+If the repository’s `reference_results` or `assets/original_figures` folder cannot be found, a second dialog asks for the extracted package’s `R/00_Final_Analysis.R` file.
+
+The default input encoding is **CP949**.
+
+The script contains the analysis code directly within numbered modules and does not require an earlier R workspace or a `source()` driver.
+
+After the main analysis, `R/01_Capture_Environment.R` can be run in the same session to record dependency versions. If `renv` is already installed, it can also generate a lockfile from the installed environment. This step does not install or update analysis packages.
+
+## Outputs
+
+Results are saved directly beneath the initial working directory:
+
+```text
+Output_YYYYMMDD_HHMMSS_FEF_Final/
+```
+
+A corresponding ZIP archive is created alongside the output folder.
+
+Outputs include:
+
+- `All_Analysis_Tables.xlsx`: analysis tables in separate worksheets, with an index.
+- `Tables/`: individual aggregate result tables in CSV format.
+- `Figures/`: figures in PNG, TIFF and PDF formats.
+- `sessionInfo.txt`: the R session information.
+- `package_versions.csv`: versions of the main software dependencies.
+
+PNG and TIFF figures are exported at **1200 dpi**. PDF figures are provided in vector format.
+
+The approved manuscript Figures 1 and 2 are included. A separately labelled `Figure2_Recomputed_QC` file provides an additional rendering of the Kaplan–Meier analysis.
+
+## Study population
 
 | Group | Exposure eligible | Follow-up | Follow-up events | Complete cases | Complete-case events |
 |---|---:|---:|---:|---:|---:|
-| Never | 2991 | 2832 | 136 | 2808 | 132 |
+| Never | 2,991 | 2,832 | 136 | 2,808 | 132 |
 | Single | 136 | 128 | 46 | 127 | 45 |
 | Recurrent | 58 | 54 | 22 | 54 | 22 |
-| Frequent | 53 | 46 | 20 | 46 | 20 |
+| Frequent/Persistent | 53 | 46 | 20 | 46 | 20 |
+| **Total** | **3,238** | **3,060** | **224** | **3,035** | **219** |
 
-Model 1 uses 3060/224; Models 2–4 use 3035/219. Site is a stratum; ties use Efron. The existing post hoc three-group sensitivity analyses are reproduced separately and never overwrite the primary exposure objects.
+Model 1 uses the follow-up cohort of **3,060 participants with 224 events**. Models 2–4 use **3,035 complete cases with 219 events**.
 
-Count and effect agreement are necessary checks, but do not prove agreement with an unavailable historical participant-ID manifest. Within this run, ID ordering, joins, complete-case membership, and immutable primary groups are checked explicitly. Keep approved source data and any historical ID/group records privately for investigator verification.
+Cox models stratify by study site and use the Efron method for tied event times.
 
-## Data and repository contents
+Confirmation-based analyses use different event definitions, so their event counts differ from those of the first-observed airflow-obstruction analysis. Alternative exposure thresholds may change group membership within the same analytical cohort.
 
-Participant-level data are not included and must be obtained through the applicable KDCA/National Biobank access process. The code exports aggregate results only, not IDs, participant rows or fitted-model RDS objects. `reference_results/` contains previously supplied aggregate estimates used solely as comparison targets. These are not outputs of this new consolidated run.
+## FEF percent-predicted values
 
-The package contains no manufactured DOI, no fabricated renv lockfile, no claim of completed original-data execution, and no public upload. Follow `docs/Deposit_Guide_KO.txt` after local verification. Use the version-specific DOI of the exact accepted code release in the paper. The proposed MIT licence covers this code, not restricted KoGES data or third-party software.
+Exposure classification uses the FEF percent-predicted values supplied in the cohort data.
+
+The exact FEF-specific reference equation and visit-specific prediction settings remain to be confirmed. No alternative reference equation is substituted in this analysis.
+
+## Repository contents
+
+| Path | Contents |
+|---|---|
+| `R/00_Final_Analysis.R` | Main analysis script |
+| `R/01_Capture_Environment.R` | Environment and dependency recording |
+| `R/99_Validate_Syntax.R` | Optional R syntax check |
+| `reference_results/` | Archived aggregate reference results |
+| `assets/original_figures/` | Approved manuscript Figures 1 and 2 |
+| `docs/` | Variable mappings, manuscript–code correspondence and supporting documentation |
+| `CITATION.cff` | Software citation metadata |
+| `LICENSE` | Code licence |
+
+## Data availability
+
+Participant-level KoGES data are not included in this repository. Access requires the applicable approval and compliance with the KDCA/National Biobank of Korea data-use conditions.
+
+The analysis exports aggregate results. Participant identifiers, participant-level records and fitted-model RDS files are not included in the exported results package.
+
+## Citation
+
+The analysis code is archived in Zenodo:
+
+**https://doi.org/10.5281/zenodo.23383064**
+
+Please cite the archived software version and refer to `CITATION.cff` for the citation metadata.
+
+## Licence
+
+See `LICENSE` for the terms governing the analysis code.
+
+The code licence does not grant access to restricted KoGES data or replace the licences of third-party software.

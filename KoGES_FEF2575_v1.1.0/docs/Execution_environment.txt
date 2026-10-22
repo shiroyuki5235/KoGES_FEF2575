@@ -1,0 +1,7 @@
+Investigator run: 22 October 2026
+Output archive: Output_20261022_125116_FEF_Final.zip
+OS: Windows 11 x64
+R: 4.6.1
+survival: 3.8-12
+openxlsx: 4.2.9
+zip: 3.0.2

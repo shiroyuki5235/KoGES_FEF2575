@@ -1,0 +1,11 @@
+Table S3 retains the original analysis.
+Basis: splines::ns(x, df=3, intercept=FALSE).
+Sample: 3035 complete cases / 219 events.
+Ratio internal knots: 0.79, 0.83; boundaries: 0.70, 1.00.
+FEF percent-predicted internal knots: 92, 116; boundaries: 44, 214.
+Knots are empirical 1/3 and 2/3 quantiles; boundaries are observed ranges.
+Module 25 writes actual fitted basis attributes rather than assigning expected values.
+Ratio_TV adds three fixed ratio basis columns times log1p(t)-log(2); t is years since AS04.
+Exposure time-effect extension adds three group indicators times the same function.
+Likelihood-ratio comparisons add 3 df each. Site strata; Efron ties.
+Explicit intercept=FALSE documents the existing default, not a change in basis.

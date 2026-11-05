@@ -1,0 +1,23 @@
+Manuscript_item,Legacy_item,Scope,Modules,Generated_outputs,Notes
+Table 1,Table 1,Final manuscript 2026-11-05,29,Table1_AS04.csv; Table1_numeric.csv,Follow-up cohort 3060
+Table 2A,Table 2A,Final manuscript 2026-11-05,29,Table2A_Incidence.csv,Follow-up cohort 3060
+Table 2B,Table 2B,Final manuscript 2026-11-05,11,Main_Models1to4.csv,M1 3060/224; M2–4 3035/219
+Figure 1,Figure 1,Final manuscript 2026-11-05,"05,09,31",Selection_flow.csv; Figure1.png/.tiff/.pdf,New selection-flow rendering
+Figure 2,Figure 2,Final manuscript 2026-11-05,"16,31",KM_aggregate_steps.csv; Figure2.png/.tiff/.pdf,Unadjusted follow-up cohort
+S1,S1,Final manuscript 2026-11-05,"05,09,13",S1A_Denominators.csv; Selection_flow.csv; Selection_two_stages.csv; FEF_visit_distribution.csv,Selection and attendance
+S2A,S2A,Final manuscript 2026-11-05,"15,18",Confirmation_HR.csv; Confirmation_PH.csv; First_positive_confirmation_opportunity.csv,Four-group confirmation
+S2B,S2B,Final manuscript 2026-11-05,26,S2B_Pooled_sensitivity.csv,Existing pooled threshold and confirmation analyses
+S3A,S3A,Final manuscript 2026-11-05,20–25,FEF_HR_comparison.csv; Model_fit.csv; Spline_settings.csv,Original spline and ratio time effects
+S3B-C,S3B-C,Final manuscript 2026-11-05,"11,21–24",Main_PH.csv; PH_tests.csv; Time_effect_LRT.csv,PH and interaction tests
+Not reported (additional historical analysis),S4,"Additional, not in final manuscript",27–28,S4_Original_contrasts.csv; S4_BMI_TV_contrasts.csv; S4_*.csv,Existing pooled historical models
+S4,S5,Final manuscript 2026-11-05,14,AFT_distribution_TR.csv; AFT_distribution_fit.csv; Event_interval_summary.csv,Interval-censored AFT
+S5A-B,S6A-B,Final manuscript 2026-11-05,"01,03,19",FEF_identity_*.csv; Final_cohort_FEF_arithmetic.csv; Classification_stability_*.csv; Four_group_reclassification.csv,Supplied FEF values retained
+S5C,S6C,Final manuscript 2026-11-05,12,Covariate_distribution.csv; Pairwise_covariate_support.csv; Covariate_Spearman.csv; Design_column_VIF.csv,Landmark overlap and collinearity
+S6,S7,Final manuscript 2026-11-05,16,KM_2_4_6_years_CI.csv,Pointwise cumulative detection
+S7A,S8A,Final manuscript 2026-11-05,34–35,S8A_Distribution.csv,3035 complete cases
+S7B,S8B,Final manuscript 2026-11-05,"32,35",S8B_Incidence.csv; S8_Boundary.csv; S8_Set_identity.csv,778/204 and 589/195
+S7C,S8C,Final manuscript 2026-11-05,"33,35",S8C_HR.csv; S8_SMD.csv,M4 / smoking strata / ratio time effect
+Not reported (additional historical analysis),S9A,"Additional, not in final manuscript","33,35",S9A_History_HR.csv,Same 3035/219
+Not reported (additional historical analysis),S9B,"Additional, not in final manuscript","33,35",S9B_Time_effect_HR.csv; S8S9_Time_effect.csv,BMI time effects
+Not reported (additional historical analysis),S9C,"Additional, not in final manuscript","33,35",S9C_PH.csv; S8S9_Time_effect.csv,PH diagnostic p values and targeted Wald tests
+Not reported (additional historical analysis),S9D,"Additional, not in final manuscript",34–35,S9D_VIF.csv,Design-column VIF; not GVIF
